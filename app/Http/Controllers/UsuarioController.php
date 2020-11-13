@@ -67,10 +67,6 @@ class UsuarioController extends Controller
 
         $usuario->save();
         return $usuario;
-
-
-
-
     }
 
     /**
