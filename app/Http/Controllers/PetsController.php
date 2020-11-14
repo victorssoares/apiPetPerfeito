@@ -61,9 +61,9 @@ class PetsController extends Controller
         if(!$pets->sexo){
             return response(" O campo sexo é Obrigatorio.",400);
         }
-        if(!$pets->namoro){
-            return response(" O campo namoro é Obrigatorio.",400);
-        }
+        // if(!$pets->namoro){
+        //     return response(" O campo namoro é Obrigatorio.",400);
+        // }
         if(!$pets->usuario_id){
             return response(" Usuário não encontrado.",400);
         }
