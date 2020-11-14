@@ -69,7 +69,7 @@ class PetsController extends Controller
         }
 
         $pets->save();
-        return response('Pet cadastrado com sucesso',201);
+        return $pets;
 
     }
 
