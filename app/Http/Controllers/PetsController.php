@@ -44,7 +44,9 @@ class PetsController extends Controller
         $pets->raca = $dados['raca'];
         $pets->sexo = $dados['sexo'];
         $pets->namoro = $dados['namoro'];
+        $pets->sobre = $dados['sobre'];
         $pets->usuario_id = $dados['usuario_id'];
+
 
         if(!$pets->nome){
             return response(" O campo nome é Obrigatorio.",400);

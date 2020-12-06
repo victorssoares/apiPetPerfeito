@@ -21,6 +21,7 @@ class CreatePetsTable extends Migration
             $table->string('raca',20);
             $table->string('sexo',5);
             $table->string('namoro',1)->default("N");
+            $table->string('sobre',250);
             $table->unsignedBigInteger('usuario_id');
             $table ->foreign('usuario_id')->references('id')->on('usuarios')
             ->onDelete('cascade')->onUpdate('cascade');
