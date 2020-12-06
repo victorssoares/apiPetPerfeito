@@ -81,9 +81,9 @@ class PetsController extends Controller
      * @param  \App\Models\Pets  $pets
      * @return \Illuminate\Http\Response
      */
-    public function show(Pets $pets)
+    public function show(int $usuario_id)
     {
-        //
+        return Pets::where('usuario_id', '<>', $usuario_id)->get();
     }
 
     /**

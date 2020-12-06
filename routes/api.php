@@ -16,5 +16,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::post('usuarios/login',[UsuarioController::class, 'login']);
+Route::post('usuarios/buscar',[UsuarioController::class, 'buscar']);
 Route::resource('usuarios', UsuarioController::class);
 Route::resource('pets', PetsController::class);

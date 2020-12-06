@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Pets;
 use App\Models\Usuario;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -80,7 +81,7 @@ class UsuarioController extends Controller
         //
         return Usuario::with('pets')->find($usuario_id);
     }
-
+    
     /**
      * Show the form for editing the specified resource.
      *
